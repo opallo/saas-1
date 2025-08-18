@@ -7,14 +7,20 @@ export async function POST(req: NextRequest) {
   const res = JSON.parse(payload);
 
   const sig = req.headers.get("Stripe-Signature");
+  if (!sig) {
+    return NextResponse.json(
+      { status: "Failed", error: "Missing Stripe-Signature header" },
+      { status: 400 }
+    );
+  }
 
   const dateTime = new Date(res?.created * 1000).toLocaleDateString();
-  const timeString = new Date(res?.created * 1000).toLocaleDateString();
+  const timeString = new Date(res?.created * 1000).toLocaleTimeString();
 
   try {
     const event = stripe.webhooks.constructEvent(
       payload,
-      sig!,
+      sig,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
 
