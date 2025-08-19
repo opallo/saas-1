@@ -37,7 +37,7 @@ const CheckoutButton: React.FC = () => {
       disabled={loading}
       className="rounded-md bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 disabled:opacity-50"
     >
-      {loading ? 'Processing...' : 'Get Started'}
+      {loading ? 'One sec...' : 'Get Started'}
     </button>
   );
 };
