@@ -37,6 +37,8 @@ A minimal foundation for building SaaS products with modern tools like Next.js 1
    ```bash
    npm run dev
    ```
+4. **Open the app and authenticate**
+   Visit http://localhost:3000 and use the Sign up or Sign in links to get started.
 
 ## Testing & Linting
 
