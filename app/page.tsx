@@ -40,10 +40,6 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Example app */}
-            <section className="py-24">
-              <ExampleApp />
-            </section>
 
             {/* Features */}
             <section className="py-24">
@@ -57,6 +53,11 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </section>
+
+            {/* Centered Example app (make it pretty) */}
+            <section className="py-24 text-center flex justify-center items-center">
+              <ExampleApp />
             </section>
 
             {/* Call to action */}
