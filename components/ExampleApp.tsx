@@ -20,7 +20,7 @@ export default function ExampleApp() {
   return (
     <div className="relative w-full max-w-md">
       <div className="pointer-events-none absolute -inset-1 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-30 blur-lg"></div>
-      <div className="relative rounded-lg bg-gray-800 p-6 shadow-xl">
+      <div className="relative rounded-lg p-6 shadow-xl">
         <h3 className="mb-4 text-xl font-semibold text-white">Example Todo App</h3>
         <div className="flex gap-2">
           <input
@@ -28,7 +28,7 @@ export default function ExampleApp() {
             onChange={(e) => setTask(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && addTask()}
             placeholder="Add a task"
-            className="flex-1 rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-indigo-500 focus:outline-none"
+            className="flex-1 rounded-md border border-gray-700 bg-black px-3 py-2 text-sm text-white placeholder-gray-500 focus:border-indigo-500 focus:outline-none"
           />
           <button
             onClick={addTask}
@@ -44,7 +44,7 @@ export default function ExampleApp() {
           {tasks.map((t, i) => (
             <li
               key={i}
-              className="flex items-center justify-between rounded-md bg-gray-700 px-3 py-2 text-sm text-white"
+              className="flex items-center justify-between rounded-md bg-black px-3 py-2 text-sm text-white"
             >
               <span>{t}</span>
               <button

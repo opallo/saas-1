@@ -27,7 +27,7 @@ export default function Home() {
           <Header />
           <main className="flex-1">
             {/* Hero */}
-            <section className="bg-gradient-to-b from-gray-900 to-black py-32 pb-12 text-center">
+            <section className="bg-gradient-to-b from-gray-950 to-black py-32 pb-12 text-center">
               <h1 className="mx-auto max-w-2xl text-5xl font-bold tracking-tight text-white sm:text-6xl">
                 Build your SaaS, fast.
               </h1>
@@ -35,7 +35,7 @@ export default function Home() {
                 A minimal starter with auth, payments, and database ready so you can
                 focus on your product.
               </p>
-              <div className="mt-14 pb-12 flex justify-center">
+              <div className="mt-12 pb-0 flex justify-center">
                 <CheckoutButton />
               </div>
             </section>
@@ -43,23 +43,16 @@ export default function Home() {
 
             {/* Features */}
             <section className="relative overflow-hidden py-12 pt-12">
-              {/* Section soft glow */}
-              <div className="pointer-events-none absolute inset-0 z-0">
-                <div className="absolute -inset-8 rounded-[40px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-15 blur-3xl"></div>
-              </div>
-
-              {/* Subtle animated conic gradient */}
-              <div className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[140%] w-[140%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[conic-gradient(at_top_right,_indigo_500,_purple_500,_pink_500,_indigo_500)] opacity-10 blur-3xl animate-[spin_24s_linear_infinite]"></div>
-
               <div className="relative z-10">
                 <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
                   {features.map((feature) => (
                     <div key={feature.title} className="text-center">
                       <h3 className="relative mx-auto inline-block text-xl font-semibold text-white">
-                        <span className="absolute -inset-1 -z-10 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-25 blur"></span>
+                        <span className="absolute -inset-1 -z-10 rounded-md bg-white opacity-15 blur-md"></span>
                         <span className="relative">{feature.title}</span>
                       </h3>
-                      <p className="mt-2 text-gray-400">{feature.description}</p>
+                      <p className="m-2 text-gray-400">
+                        {feature.description}</p>
                     </div>
                   ))}
                 </div>
@@ -67,7 +60,7 @@ export default function Home() {
             </section>
 
             {/* Centered Example app (make it pretty) */}
-            <section className="py-32 pb-42 text-center flex justify-center items-center">
+            <section className="py-24 pb-72 text-center flex justify-center items-center">
 
               <ExampleApp />
             </section>
