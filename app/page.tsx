@@ -60,7 +60,7 @@ export default function Home() {
             </section>
 
             {/* Centered Example app (make it pretty) */}
-            <section className="py-24 pb-72 text-center flex justify-center items-center">
+            <section className="relative overflow-hidden py-32 pb-72 text-center flex justify-center items-center shadow-[inset_0_40px_60px_rgba(0,0,0,0.5)]">
 
               <ExampleApp />
             </section>
