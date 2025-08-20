@@ -82,18 +82,6 @@ export default function Home() {
             database in one integrated stack.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/sign-up"
-              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
-            >
-              Create account
-            </Link>
-            <Link
-              href="/sign-in"
-              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
-            >
-              Sign in
-            </Link>
             <CheckoutButton />
           </div>
         </section>
