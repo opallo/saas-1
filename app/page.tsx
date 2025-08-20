@@ -29,7 +29,7 @@ export default function Home() {
             {/* Hero */}
             <section className="bg-gradient-to-b from-gray-900 to-black py-32 text-center">
               <h1 className="mx-auto max-w-2xl text-5xl font-bold tracking-tight text-white sm:text-6xl">
-                Launch your SaaS faster
+                Build your SaaS faster
               </h1>
               <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
                 A minimal starter with auth, payments, and database ready so you can
