@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import CheckoutButton from "@/components/CheckoutButton";
 import Footer from "@/components/Footer";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import ExampleApp from "@/components/ExampleApp";
 
 const features = [
   {
@@ -37,6 +38,11 @@ export default function Home() {
               <div className="mt-10 flex justify-center">
                 <CheckoutButton />
               </div>
+            </section>
+
+            {/* Example app */}
+            <section className="py-24">
+              <ExampleApp />
             </section>
 
             {/* Features */}
