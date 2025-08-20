@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import CheckoutButton from "@/components/CheckoutButton";
 import Footer from "@/components/Footer";
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import ExampleApp from "@/components/ExampleApp";
 
 const features = [
   {
@@ -69,6 +70,17 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Example app */}
+        <section className="bg-gray-950 py-24 text-center">
+          <h2 className="text-3xl font-bold text-white">Try it out</h2>
+          <p className="mx-auto mt-4 max-w-md text-gray-400">
+            A tiny todo list to demonstrate the stack in action.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <ExampleApp />
           </div>
         </section>
 
