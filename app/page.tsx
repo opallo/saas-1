@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import CheckoutButton from "@/components/CheckoutButton";
 import Footer from "@/components/Footer";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 const features = [
   {
