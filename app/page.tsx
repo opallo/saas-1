@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import CheckoutButton from "@/components/CheckoutButton";
 import Footer from "@/components/Footer";
 import ExampleApp from "@/components/ExampleApp";
-import Link from "next/link";
 
 const features = [
   {
