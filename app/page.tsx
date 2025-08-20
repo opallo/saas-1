@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import CheckoutButton from "@/components/CheckoutButton";
 import Footer from "@/components/Footer";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import ExampleApp from "@/components/ExampleApp";
+import Link from "next/link";
 
 const features = [
   {
@@ -42,16 +42,18 @@ export default function Home() {
             configured so you can focus on your product.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <SignUpButton mode="modal">
-              <button className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20">
-                Sign up
-              </button>
-            </SignUpButton>
-            <SignInButton mode="modal">
-              <button className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20">
-                Sign in
-              </button>
-            </SignInButton>
+            <Link
+              href="/sign-up"
+              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
+            >
+              Sign up
+            </Link>
+            <Link
+              href="/sign-in"
+              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
+            >
+              Sign in
+            </Link>
             <CheckoutButton />
           </div>
         </section>
@@ -92,16 +94,18 @@ export default function Home() {
             database in one integrated stack.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <SignUpButton mode="modal">
-              <button className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20">
-                Create account
-              </button>
-            </SignUpButton>
-            <SignInButton mode="modal">
-              <button className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20">
-                Sign in
-              </button>
-            </SignInButton>
+            <Link
+              href="/sign-up"
+              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
+            >
+              Create account
+            </Link>
+            <Link
+              href="/sign-in"
+              className="rounded-md bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20"
+            >
+              Sign in
+            </Link>
             <CheckoutButton />
           </div>
         </section>
